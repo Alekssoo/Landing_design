@@ -131,3 +131,73 @@
     border: 1px solid #FFFFFF;
     /* height: 25; */
 }
+
+.projects {
+    background-color: black;
+    max-height: 1072px;
+}
+
+.projects_content {
+    height: auto;
+}
+
+.projects_content_names {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1440px;
+    border: 1px solid black;
+    /* margin: 0; */
+    width: 55%;
+    margin-top: 0;
+    margin-left: 40%;
+}
+
+.projects_content_name {
+    margin-right: 61px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.projects_content_name:first-child {
+    /* margin-left: 627px; */
+    
+}
+
+.projects_content_link {
+    font-family: 'Yeseva One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.3);
+    text-decoration: none;
+    padding-top: 6.7px;
+    padding-bottom: 6.7px;
+}
+
+.projects_content_current {
+    color: #E3B873;
+    /* text-decoration: underline; */
+    border-bottom: 1px solid #E3B873;
+}
+
+.projects_content_details{
+    display: flex;
+}
+
+.projects_content_info {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    width: 40%;
+}
+
+.projects_content_block {
+    display: inline-block;
+    width: 40%;
+}
+
+.projects_block_plus {
+    display: block;
+}

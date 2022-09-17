@@ -42,6 +42,7 @@
                 
             </div>
         </section>
+
         <section class="projects" id="projects">
             <div class="content projects_content">
                 <ul class="projects_content_names">
@@ -57,7 +58,7 @@
                 </ul>
                 <div class="projects_content_details">
                     <div class="projects_content_info">
-                        <h2 class="title projects_content_title">Completed projects</h2>
+                        <h2 class="subtitle projects_content_title">Completed projects</h2>
                         <p class="projects_content_text">
                             Only a small part of the work performed by our company is presented on the site. For 14 years on in the construction 
                             market we have made happy more than 1000 families
@@ -94,16 +95,17 @@
                 </div>
             </div>
         </section>
+
         <section class="control">
             <div class="content control_content">
                 <h2 class="title control_title">online control</h2>
-                <div class="control_logo">
+                <div class="section_logo">
                     <img src="images/projector_line.png" alt="line">
                     <img src="images/Projector.svg" alt="projector">
                     <img src="images/projector_line.png" alt="line">
                 </div>
                 <div class="control_video">
-                    
+                    <!-- div с псевдоэлементом -->
                 </div>
                 
                 <hr class="control_line">
@@ -112,27 +114,95 @@
                 <form action="" class="control_form">
                     <div class="control_form_inputs">
                         <div class="control_form_input">
-                            <label class="input_label control_form_label">
+                            <label class="input_label control_form_label" for="check-name">
                                 Name                       
                             </label>
-                            <input type="text" value="What is your name:" class="input"/>
+                            <input type="text" value="What is your name:" class="input" id="check-name"/>
                         </div>
                         <div class="control_form_input">
-                            <label class="input_label">
+                            <label class="input_label" for="check-phone">
                                 Phone                      
                             </label>
-                            <input type="text" value="Your phone number:" class="input"/> 
+                            <input type="text" value="Your phone number:" class="input" id="check-phone"/> 
                         </div>
                         <button type="submit" class="button">Submit</button>  
                     </div>
                     
-                    <label>
-                        <input type="checkbox" class="">
+                    <input type="checkbox" class="custom-checkbox" id="check-agree" checked>
+                    <label for="check-agree" class="check-label">  
                         I agree to the processing of personal data
                     </label>
                 </form>
-
             </div>
+        </section>
+
+        <section class="types">
+            <div class="content">
+                <h2 class="subtitle">TYPES OF REPAIR</h2>
+                <div class="section_logo">
+                    <img src="images/projector_line.png" alt="line">
+                    <img src="images/Types_repair.svg" alt="repair_logo">
+                    <img src="images/projector_line.png" alt="line">
+                </div>
+                <div class="types_cards">
+                    <div class="types_cards_item">
+                        <img src="images/card_type1.png" alt="type_repair-1">
+                        <div class="types_cards_info">
+                            <h3 class="types_card_title">Redecorating</h3>
+                            <ul class="types_item_details">
+                                <li class="types_details_item">Dismantling of old coatings</li>
+                                <li class="types_details_item">Wallpapering</li>
+                                <li class="types_details_item">Painting walls and ceilings</li>
+                                <li class="types_details_item">Laying flooring</li>
+                                <li class="types_details_item">Replacing plumbing</li>
+                                <li class="types_details_item">Replacing sockets and switches</li>
+                                <li class="types_details_item">Replacing doors</li>
+                            </ul>
+                        </div>
+                        <button class="button types_details_button">
+                            from 900 rub / m2
+                        </button>
+                    </div>
+                    <div class="types_cards_item">
+                        <img src="images/card_type2.png" alt="type_repair-2">
+                        <div class="types_cards_info">
+                            <h3 class="types_card_title">Overhaul</h3>
+                            <ul class="types_item_details">
+                                <li class="types_details_item">Dismantling of old coatings</li>
+                                <li class="types_details_item">Wallpapering</li>
+                                <li class="types_details_item">Painting walls and ceilings</li>
+                                <li class="types_details_item">Laying flooring</li>
+                                <li class="types_details_item">Replacing plumbing</li>
+                                <li class="types_details_item">Replacing sockets and switches</li>
+                                <li class="types_details_item">Replacing doors</li>
+                            </ul>
+                        </div>
+                        <button class="button types_details_button">
+                            from 1800 rub / m2
+                        </button>
+                    </div>
+                    <div class="types_cards_item">
+                        <img src="images/card_type3.png" alt="type_repair-3">
+                        <div class="types_cards_info">
+                            <h3 class="types_card_title">Designer Repair</h3>
+                            <ul class="types_item_details">
+                                <li class="types_details_item">Dismantling of old coatings</li>
+                                <li class="types_details_item">Wallpapering</li>
+                                <li class="types_details_item">Painting walls and ceilings</li>
+                                <li class="types_details_item">Laying flooring</li>
+                                <li class="types_details_item">Replacing plumbing</li>
+                                <li class="types_details_item">Replacing sockets and switches</li>
+                                <li class="types_details_item">Replacing doors</li>
+                            </ul>
+                        </div>
+                        <button class="button types_details_button">
+                            from 4000 rub / m2
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            
         </section>
     </main>
 </body>

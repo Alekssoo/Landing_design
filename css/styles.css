@@ -565,3 +565,83 @@
 .types_request_button {
     align-self: flex-end;
 }
+
+.types_sales {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    height: 100px;
+    margin-right: 11%;
+    padding-bottom: 242px;
+}
+
+.type_sales_text {
+    color: #E3B873;
+    width: 22%;
+    font-size: 18px;
+} 
+
+.type_sales_logo {
+    padding-top: 15px;
+}
+
+
+.styles {
+    background-image: url('../images/fant_back.png');
+    background-size: cover;
+    height: 707px;
+    position: relative;
+}
+
+.styles::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.styles_content {
+    position: relative;
+    z-index: 1;
+    display: flex;
+}
+
+.styles_text {
+    width: 40%;
+}
+
+.styles_text_title {
+    width: 60%;
+}
+
+.styles_text_list {
+    list-style: none;
+    color: #fff;
+    width: 40%;
+    font-size: 20px;
+    line-height: 38px;
+}
+
+.styles_photo {
+    display: flex;
+}
+
+.styles_photo_block1 {
+    display: flex;
+    flex-direction: column;
+    margin-top: -41px;
+    margin-right: 43px;
+}
+
+.photo_block_item {
+    margin-bottom: 39px;
+}
+
+.styles_photo_block2 {
+    display: flex;
+    flex-direction: column;
+    margin-top: -113px;
+}

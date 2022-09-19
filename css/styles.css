@@ -81,7 +81,7 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    width: 100%;
+    /* width: 100%; */
 }
 
 .custom-checkbox {
@@ -147,6 +147,54 @@
 .content {
     max-width: 1260px;
     margin: 0 auto;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 133px;
+    flex-wrap: wrap;
+}
+
+.cards_item {
+    display: flex;
+    flex-direction: column;
+    width: 31.5%;
+}
+
+.card_content {
+    box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.04);
+    margin: 0 auto;
+    background-color: #FFFFFF;
+    width: 80%;
+    padding-bottom: 45px;
+}
+
+
+.card_title {
+    font-family: 'Yeseva One';
+    font-size: 18px;
+    line-height: 25px;
+    margin-left: 7%;
+    font-weight: 400;
+    margin-bottom: 13px;
+}
+
+.card_text {
+    font-size: 13px;
+    line-height: 27px;
+    color: #959595;
+}
+
+.card_button {
+    font-family: 'Yeseva One';
+    font-size: 18px;
+    line-height: 25px;
+    width: 228px;
+    height: 54px;
+    padding: 11px 16px;
+    margin-top: -25px;
+    text-transform: uppercase;
 }
 
 .header {
@@ -435,7 +483,7 @@
     margin: 0 auto; 
     display: flex;
     margin-bottom: 35px;
-    justify-content: space-around;   
+    justify-content: space-between;   
 }
 
 .types {
@@ -444,41 +492,9 @@
     background-position: 0 100%;
 }
 
-.types_cards {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 133px;
-    flex-wrap: wrap;
-}
-
-.types_cards_item {
-    display: flex;
-    flex-direction: column;
-    width: 31.5%;
-}
-
 .types_cards_info {
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03);
-    margin: 0 auto;
     margin-top: -125px;
-    background-color: #FFFFFF;
-    width: 80%;
-    padding-bottom: 45px;
-}
-
-.types_card_title {
-    font-family: 'Yeseva One';
-    font-size: 18px;
-    line-height: 25px;
-    margin-left: 7%;
-    font-weight: 400;
-    margin-bottom: 13px;
-}
-
-.types_details_item {
-    font-size: 13px;
-    line-height: 27px;
-    color: #959595;
 }
 
 .types_item_details {
@@ -486,15 +502,10 @@
     margin-bottom: 0;
 }
 
+
 .types_details_button {
-    font-family: 'Yeseva One';
-    font-size: 18px;
-    line-height: 25px;
-    width: 228px;
-    height: 54px;
     padding: 17px 16px;
     margin-left: 10%;
-    margin-top: -25px;
 }
 
 .types_steps-request {
@@ -690,4 +701,45 @@
     display: flex;
     flex-direction: column;
     margin-top: -113px;
+}
+
+.clients {
+    margin-top: 110px;
+    padding-bottom: 371px;
+    background: url('../images/quest_back_left.png') no-repeat no-repeat,
+                url('../images/quest_back_right.png') no-repeat no-repeat;
+    background-position: left bottom, right bottom;
+}
+
+.clients_card_content {
+    padding: 24px 32px 90px 20px;
+}
+
+.clients_card_info {
+    display: flex;
+}
+
+.clients_card_photo {
+    border-radius: 100px;
+}
+
+.clients_cards_name {
+    max-width: 65%;
+}
+
+.clients_card_button {
+    margin-left: 16px;
+    display: flex;
+    justify-content: space-between;
+    width: 294px;
+    align-items: center;
+    box-shadow: 5px 5px 20px rgba(227, 184, 115, 0.5);
+}
+
+.clients_text {
+    margin: 24px auto 39px auto;
+    font-weight: 400;
+    max-width: 30%;
+    text-align: center;
+    font-size: 18px;
 }

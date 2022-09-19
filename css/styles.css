@@ -81,7 +81,6 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    /* width: 100%; */
 }
 
 .custom-checkbox {
@@ -144,6 +143,11 @@
     background-color: #e9ecef;
   }
 
+  .check-label {
+    margin-top: 16px;
+    margin-bottom: 39px;
+}
+
 .content {
     max-width: 1260px;
     margin: 0 auto;
@@ -197,11 +201,54 @@
     text-transform: uppercase;
 }
 
-.header {
+.dark-form {
+    width: 45%;
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+    color: #FFFFFF;
+    padding: 27px 49px 0px 49px;
+    max-height: 509px;
+    box-shadow: 0px 30px 30px rgba(0, 0, 0, 0.05);
+}
+
+.dark-form_title {
+    margin-bottom: 39px;
+    align-self: center;
+    font-weight: 400;
+    max-width: 55%;
+    text-align: center;
+    font-size: 18px;
+}
+
+.dark-form_input {
+    background-color: #000;
+    color: #FFFFFF;
+    border-bottom:1px solid rgba(255, 255, 255, 0.15);
+    width: 100%;
+}
+
+.dark-form_input_label {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.dark-form_item:not(:last-of-type) {
+    padding-bottom: 48px;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.width-40 {
+    width: 40%;
+}
+
+.head-foot {
     background-color: black;
 }
 
-.header_content {
+.nav_content {
     display: flex;
     justify-content: space-between;
     height: 83px;
@@ -231,14 +278,14 @@
     text-transform: uppercase;
 }
 
-.nav_tel_link {
+.colorful {
     color: #E3B873;
-
 }
 
 .nav_button {
     padding-top: 13px;
     padding-bottom: 13px;
+    height: 37px;
 }
 
 .main {
@@ -272,10 +319,6 @@
     line-height: 53px;
     color: #FFFFFF;
     padding-top: 194px;
-}
-
-.content_title_town {
-    color: #E3B873;
 }
 
 .main_content_text {
@@ -559,46 +602,6 @@
     max-width: 60%;
 }
 
-.types_form-request {
-    width: 45%;
-    background-color: #000;
-    display: flex;flex-direction: column;
-    color: #FFFFFF;
-    padding: 27px 49px 0px 49px;
-    max-height: 509px;
-    box-shadow: 0px 30px 30px rgba(0, 0, 0, 0.05);
-}
-
-.types_form-request_title {
-    margin-bottom: 39px;
-    align-self: center;
-    font-weight: 400;
-    width: 55%;
-    text-align: center;
-    font-size: 18px;
-}
-
-.types-request_input {
-    background-color: #000;
-    color: #FFFFFF;
-    border-bottom:1px solid rgba(255, 255, 255, 0.15);
-    width: 100%;
-}
-
-.types-request_input_label {
-    color: rgba(255, 255, 255, 0.5);
-}
-
-
-.types_request_item:not(:last-of-type) {
-    padding-bottom: 48px;
-}
-
-.types_request_check-label {
-    margin-top: 16px;
-    margin-bottom: 39px;
-}
-
 .types_request_button {
     align-self: flex-end;
 }
@@ -646,10 +649,6 @@
     display: flex;
 }
 
-.styles_text {
-    width: 40%;
-}
-
 .styles_text_title {
     width: 60%;
     margin-left: 8%;
@@ -682,10 +681,6 @@
     color: #E3B873;
 }
 
-.styles_photo {
-    display: flex;
-}
-
 .styles_photo_block1 {
     display: flex;
     flex-direction: column;
@@ -715,10 +710,6 @@
     padding: 24px 32px 90px 20px;
 }
 
-.clients_card_info {
-    display: flex;
-}
-
 .clients_card_photo {
     border-radius: 100px;
 }
@@ -742,4 +733,87 @@
     max-width: 30%;
     text-align: center;
     font-size: 18px;
+}
+
+.questions_content {
+    position: relative;
+    z-index: 2;
+}
+
+.questions_form {
+    margin: -270px auto 52px auto;
+    padding: 34px 181px 34px 181px;
+    max-width: 883px;
+}
+
+.questions_form_title {
+    font-family: 'Yeseva One';
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.questions_inputs-horiz {
+    display: flex;
+    justify-content: space-between;
+}
+
+.questions_inputs-horiz > div:first-of-type {
+    margin-right: 58px;
+}
+
+.questions_form_bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contacts {
+    background: url('../images/questions_back.png');
+    background-size: cover;
+    position: relative;
+    margin-top: -270px;
+    padding-bottom: 66px;
+}
+
+.contacts::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.contacts_content {
+    position: relative;
+    z-index: 1;
+    padding-top: 250px;
+}
+
+.contacts_info_text {
+    margin: 0 auto;
+    text-align: center;
+    max-width: 45%;
+    font-size: 20px;
+    margin-bottom: 26px;
+}
+
+.contacts_info_links {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 43px;
+}
+
+.contacts_info_link {
+    margin-right: 15px;
+}
+
+.contacts_map {
+    margin: auto;
+    display: block;
+}
+
+.footer_content {
+    height: 133px;
 }

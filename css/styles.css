@@ -886,17 +886,45 @@
         padding-top: 20px;
     }
 
+    .projects_content {
+        display: flex;
+        flex-direction: column;
+    }
+
     .projects_details {
         flex-direction: column;
-        max-height: 1050px;
+        max-height: 100%;
+        
+        margin-top: 15px;
     }
 
     .projects_details_info {
         width: 100%;
     }
+    
+    .projects_details_params {
+        position: relative;
+    }
 
-    .projects_details_photo {
-        max-width: 740px;
+    .projects_details_params::before {
+        content: '';
+        background-image: url(../images/compl_project.png);
+        width: 100%;
+        position: absolute;
+        z-index: 1;
+        top: -160%;
+        height: 150%;
+        background-size: cover;
+    }
+
+    .projects_params_block {
+        margin-bottom: 30px;
+    }
+
+    .projects_text {
+        margin-top: 50px;
+        margin-bottom: 370px;
+        text-align: center;
     }
 
     .projects_block_title {
@@ -964,7 +992,7 @@
     }
     
 
-    nav, .nav-button, .projects_names, .projects_details_switch, .types_steps, .styles::before, .styles_photo_block1, .styles_photo_block2, .styles_text_list, footer {
+    nav, .nav-button, .projects_names, .projects_details_switch, .projects_details_photo, .types_steps, .styles::before, .styles_photo_block1, .styles_photo_block2, .styles_text_list, footer {
         display: none;
     }
 

@@ -418,6 +418,7 @@
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
+    height: 100%;
 }
 
 .projects_content_block {
@@ -429,19 +430,25 @@
 .projects_block_title {
     font-size: 18px;
     line-height: 25px;
+    margin-bottom: 9px;
 }
 
 .projects_content_switch {
     align-self: flex-start;
+    /* justify-self: end; */
 }
 
-.projects_content_param > div:nth-child(-n+2) h3 {
+/* .projects_content_param > div:nth-child(-n+2) div {
     margin-top: 0;
+} */
+
+.projects_content_param dd {
+    margin-left: 0;
 }
 
-.projects_block_plus {
+/* .projects_block_plus {
     display: block;
-}
+} */
 
 .projects_content_info > div:nth-last-child(2) {
     flex: 1;

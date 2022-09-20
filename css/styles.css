@@ -166,6 +166,14 @@
     .content {
         max-width: 740px;
     }
+
+    .projects_details_photo {
+        max-width: 740px;
+    }
+
+    nav, .nav-button, footer {
+        display: none;
+    }
   }
 
 .cards {
@@ -270,6 +278,7 @@
     align-items: center;
     font-size: 11px;
     line-height: 15px;
+    max-width: 1250px;
 }
 
 .nav-content-logo {
@@ -450,7 +459,6 @@
 
 .projects_details_switch {
     align-self: flex-start;
-    /* justify-self: end; */
 }
 
 .projects_details_info > div:nth-last-child(2) {
@@ -460,13 +468,6 @@
 .projects_details_photo {
     max-width: 100%;
 }
-
-@media screen and (min-width: 375px) and (max-width: 768px) {
-    .projects_details_photo {
-        max-width: 740px;
-    }
-}
-
 
 .control {
     margin-top: -350px;

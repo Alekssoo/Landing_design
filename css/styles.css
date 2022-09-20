@@ -92,7 +92,10 @@
 .custom-checkbox+label {
     display: inline-flex;
     align-items: center;
-    user-select: none;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
     font-size: 14px;
   }
 
@@ -467,7 +470,8 @@
     max-width: 817px;
     max-height: 434px;
     z-index: 1;
-    filter: drop-shadow(0px 20px 50px rgba(0, 0, 0, 0.15));
+    -webkit-filter: drop-shadow(0px 20px 50px rgba(0, 0, 0, 0.15));
+            filter: drop-shadow(0px 20px 50px rgba(0, 0, 0, 0.15));
 }
 
 .control_video::before {
@@ -665,6 +669,8 @@
 }
 
 .styles_text_item {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
     width: fit-content;
 }
 

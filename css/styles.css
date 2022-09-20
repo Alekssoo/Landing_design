@@ -124,35 +124,36 @@
     border-color: #E3B873;
   }
 
-  .custom-checkbox:not(:disabled):active+label::before {
+.custom-checkbox:not(:disabled):active+label::before {
     background-color: #E3B873;
     border-color: rgba(227, 184, 115, 0.5);
   }
 
-  .custom-checkbox:focus+label::before {
+.custom-checkbox:focus+label::before {
     box-shadow: 0 0 0 0.2rem rgba(227, 184, 115, 0.5);
   }
 
-  .custom-checkbox:not(:disabled):not(:hover)+label::before {
+.custom-checkbox:not(:disabled):not(:hover)+label::before {
     border: 1px solid #adb5bd;
     box-shadow: none;
   }
 
-  .custom-checkbox:focus:not(:checked)+label::before {
+.custom-checkbox:focus:not(:checked)+label::before {
     border-color: rgba(227, 184, 115, 0.5);
   }
   
-  .custom-checkbox:disabled+label::before {
+.custom-checkbox:disabled+label::before {
     background-color: #e9ecef;
   }
 
-  .check-label {
+.check-label {
     margin-top: 16px;
     margin-bottom: 39px;
 }
 
 .content {
-    max-width: 1260px;
+    /* max-width: 1260px; */
+    max-width: 1440px;
     margin: 0 auto;
 }
 
@@ -356,7 +357,6 @@
 .projects_content_title {
     max-width: 50%;
     margin-top: 0;
-    color: #FFFFFF;
 }
 
 .projects_content_text {
@@ -438,17 +438,9 @@
     /* justify-self: end; */
 }
 
-/* .projects_content_param > div:nth-child(-n+2) div {
-    margin-top: 0;
-} */
-
 .projects_content_param dd {
     margin-left: 0;
 }
-
-/* .projects_block_plus {
-    display: block;
-} */
 
 .projects_content_info > div:nth-last-child(2) {
     flex: 1;

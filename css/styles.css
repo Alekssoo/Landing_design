@@ -461,11 +461,11 @@
     max-width: 100%;
 }
 
-  @media screen and (min-width: 375px) and (max-width: 768px) {
+@media screen and (min-width: 375px) and (max-width: 768px) {
     .projects_details_photo {
         max-width: 740px;
     }
-  }
+}
 
 
 .control {
@@ -741,8 +741,8 @@
     border-radius: 100px;
 }
 
-.clients_cards_name {
-    max-width: 65%;
+.clients_card_name {
+    max-width: 50%;
 }
 
 .clients_card-button {

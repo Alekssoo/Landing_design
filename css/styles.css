@@ -158,7 +158,18 @@
 
 @media screen and (max-width: 1299px) {
     .content {
-        max-width: 1260px;
+        max-width: 1200px;
+    }
+
+    .nav-content {
+        max-width: 1000px;
+    }
+    .nav-links-item {
+        margin-right: 30px;
+    }
+
+    .nav-button {
+        margin-right: 55px;
     }
   }
 
@@ -419,12 +430,30 @@
     margin-right: 50px;
 }
 
+
 .projects_details_params {
     padding-top: 21px;
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
     height: 100%;
+}
+
+.projects_details_mobile-buttons {
+    position: absolute;
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
+    left: 5%;
+    bottom: 160%;
+}
+
+.projects_details_mini-button {
+    width: 36px;
+    height: 36px;
+    display:none;
 }
 
 .projects_details_params dd {
@@ -500,8 +529,9 @@
     position: absolute;
     top: 34%;
     left: 41%;
-    width: 115px;
-    height: 110px;
+    width: 145px;
+    height: 145px;
+    background-size: cover;
 } 
 
 .control_video:hover {
@@ -900,20 +930,26 @@
 
     .projects_details_info {
         width: 100%;
+        /* position: relative; */
     }
-    
+
+    .projects_details_mini-button {
+        display:inline-block;
+        
+    }
+
     .projects_details_params {
         position: relative;
     }
 
     .projects_details_params::before {
         content: '';
-        background-image: url(../images/compl_project.png);
+        background-image: url(../images/compl_project_mobile.png);
         width: 100%;
         position: absolute;
         z-index: 1;
-        top: -160%;
-        height: 150%;
+        top: -135%;
+        height: 122%;
         background-size: cover;
     }
 
@@ -923,7 +959,7 @@
 
     .projects_text {
         margin-top: 50px;
-        margin-bottom: 370px;
+        margin-bottom: 310px;
         text-align: center;
     }
 
@@ -937,9 +973,14 @@
     }
 
     .control_video {
-        /* background-size: cover;
-        width: 100%; */
+        height: 207px;
+        background-size: contain;
     }
+
+    .control_video::after {
+        width: 67px;
+        height: 67px;
+    } 
 
     .control_form {
         display: flex;

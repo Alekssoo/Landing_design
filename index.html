@@ -41,14 +41,15 @@
                     <button class="button main_button">Calculate the cost</button> 
                     <button class="button main_button main_button_submit">Submit your application</button>
                 </div>
-
-                <!-- <button class="button main_content_button">Calculate the cost</button> 
-                <button class="button main_content_button main_content_submit">Submit your application</button>                -->
             </div>
         </section>
 
         <section class="projects" id="projects">
             <div class="content projects_content">
+                <div class="mobile-buttons projects_mobile-buttons">
+                    <img src="images/back.svg" alt="back" class="mini-button">
+                    <img src="images/forward.svg" alt="forward" class="mini-button">
+                </div>   
                 <ul class="projects_names">
                     <li class="projects_names_item">
                         <a href="#projects" class="projects_names_link projects_names_current">Rostov-on-Don, Admiral</a>
@@ -68,11 +69,7 @@
                             market we have made happy more than 1000 families
                         </p>
                         
-                        <dl class="projects_details_params">
-                            <div class="projects_details_mobile-buttons">
-                                <img src="images/back.svg" alt="back" class="projects_details_mini-button">
-                                <img src="images/forward.svg" alt="forward" class="projects_details_mini-button">
-                            </div>            
+                        <dl class="projects_details_params">         
                             <div class="projects_params_block">
                                 <dt class="title projects_block_title">City:</dt>
                                 <dd class="projects_block_value">Rostov-on-Don</dd>
@@ -117,19 +114,19 @@
                     Leave a request below and you will receive a link to the broadcast.</p>
                 <form action="" class="control_form">
                     <div class="control_form_inputs">
-                        <div class="input-container">
-                            <label class="input-label control_form_label" for="check-name">
+                        <div class="input-container control_form_input-container">
+                            <label class="input-label control_form_input-label" for="check-name">
                                 Name                       
                             </label>
-                            <input type="text" value="What is your name:" class="input" id="check-name"/>
+                            <input type="text" value="What is your name:" class="input control_form_input" id="check-name"/>
                         </div>
-                        <div class="input-container">
-                            <label class="input-label" for="check-phone">
+                        <div class="input-container control_form_input-container">
+                            <label class="input-label control_form_input-label" for="check-phone">
                                 Phone                      
                             </label>
-                            <input type="text" value="Your phone number:" class="input" id="check-phone"/> 
+                            <input type="text" value="Your phone number:" class="input control_form_input" id="check-phone"/> 
                         </div>
-                        <button type="submit" class="button">Submit</button>  
+                        <button type="submit" class="button control_form_button submit-button">Submit</button>  
                     </div>
                     
                     <input type="checkbox" class="custom-checkbox" id="check-agree" checked>
@@ -151,7 +148,7 @@
                 <div class="cards">
                     <div class="cards-item">
                         <img src="images/card_type1.png" alt="type_repair-1">
-                        <div class="card-content types_cards_info">
+                        <div class="card-content types_cards-item_info">
                             <h3 class="card-title">Redecorating</h3>
                             <ul class="types_cards-item_details">
                                 <li class="card-text">Dismantling of old coatings</li>
@@ -169,7 +166,7 @@
                     </div>
                     <div class="cards-item">
                         <img src="images/card_type2.png" alt="type_repair-2">
-                        <div class="card-content types_cards_info">
+                        <div class="card-content types_cards-item_info">
                             <h3 class="card-title">Overhaul</h3>
                             <ul class="types_cards-item_details">
                                 <li class="card-text">Dismantling of old coatings</li>
@@ -187,7 +184,7 @@
                     </div>
                     <div class="cards-item">
                         <img src="images/card_type3.png" alt="type_repair-3">
-                        <div class="card-content types_cards_info">
+                        <div class="card-content types_cards-item_info">
                             <h3 class="card-title">Designer Repair</h3>
                             <ul class="types_cards-item_details">
                                 <li class="card-text">Dismantling of old coatings</li>
@@ -215,7 +212,7 @@
                             the timing of your future repairs
                         </li>
                     </ol>
-                    <form action="" class="dark-form">
+                    <form action="" class="dark-form types_form">
                         <h3 class="dark-form-title">Leave a request for free
                             departure of the measurer</h3>
                         <div class="input-container dark-form-item">
@@ -353,6 +350,10 @@
         </section>
         <section class="questions">
             <div class="content questions_content">
+                <div class="mobile-buttons questions_mobile-buttons">
+                    <img src="images/back.svg" alt="back" class="mini-button">
+                    <img src="images/forward.svg" alt="forward" class="mini-button">
+                </div> 
                 <form action="" class="dark-form questions_form">
                     <h3 class="dark-form-title questions_form_title">have any questions?</h3>
                     <div class="questions_inputs-horiz">
@@ -365,16 +366,16 @@
                             <input type="text" class="input dark-form-input" value="Your phone number:" id="form-question_phone">
                         </div>
                     </div>                 
-                    <div class="input-container dark-form-item">
+                    <div class="input-container dark-form-item input-container-email">
                         <label class="input-label dark-form-input-label" for="form-question_mail">Email</label>
                         <input type="text" class="input dark-form-input" value="I want to know:" id="form-question_mail">
                     </div>
                     <div class="questions_form_bottom">
                         <input type="checkbox" class="custom-checkbox" id="check-agree-question" checked>
-                        <label for="check-agree-question" class="check-label">  
+                        <label for="check-agree-question" class="check-label questions_check-label">  
                             I agree to the processing of personal data
                         </label>
-                        <button type="submit" class="button questions_form_button">SUBMIT</button>
+                        <button type="submit" class="button questions_form_button submit-button">SUBMIT</button>
                     </div>        
                 </form>
             </div>

@@ -167,6 +167,10 @@
     .nav-links-item {
         margin-right: 30px;
     }
+
+    .nav_tel {
+        margin-right: 15px;
+    } 
   }
 
 .cards {
@@ -285,7 +289,7 @@
     
 }
 
-.nav-links-item {
+.nav-links-item:not(:last-child) {
     margin-right: 47px;
 }
 
@@ -318,7 +322,6 @@
 }
 
 .mini-button {
-    /* max-height: 10%; */
     display:none;
 }
 
@@ -450,7 +453,8 @@
 }
 
 .projects_details_mobile img {
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
     width: 100%;
 }
 
@@ -522,7 +526,8 @@
 }
 
 .control_video_photo {
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
     width: 100%;
 }
 
@@ -737,7 +742,6 @@
 }
 
 .styles_photo {
-    /* height: 242px; */
     position: relative;
     z-index: 0;
     height: auto;
@@ -750,7 +754,8 @@
 
 .styles_mobile_photo {
     width: 100%;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
 }
 
 .styles_photo_mobile-buttons {
@@ -982,17 +987,6 @@
         position: relative;
     }
 
-    /* .projects_details_params::before {
-        content: '';
-        background-image: url(../images/compl_project_mobile.png);
-        width: 100%;
-        position: absolute;
-        z-index: 1;
-        top: -135%;
-        height: 122%;
-        background-size: cover;
-    } */
-
     .projects_details_mobile {
         display: block;
     }
@@ -1024,22 +1018,6 @@
     .control_line {
         width: 18%;
     }
-
-    .control_video {
-        /* max-height: 366px;
-        background-size: cover; */
-    }
-
-    /* .control_video::after {
-        width: 67px;
-        height: 67px;
-    }  */
-
-    .control_video_play {
-        /* max-width: 67px; */
-        /* max-height: 67px; */
-    }
-
 
     .control_form {
         display: flex;
@@ -1112,18 +1090,9 @@
         margin-bottom: 34px;
     }
 
-    /* .styles_photo {   
-        background-image: url("../images/styles_mobile.png");
-        background-size: cover;
-        height: 242px;
-        position: relative;
-        z-index: 0;
-    } */
-
     .styles_photo_mobile {
         display: block;
     }
-    
     
 
     .questions {
@@ -1176,7 +1145,8 @@
     }
 
     .contacts_map {
-        object-fit: cover;
+        -o-object-fit: cover;
+           object-fit: cover;
         height: 50vh;
         width: 100%;
         margin-bottom: 40px;
@@ -1187,7 +1157,9 @@
         margin-bottom: 20px;
     }
 
-    nav, .nav-button, .projects_names, .projects_details_switch, .projects_details_photo, .types_steps-request, .types_form, .types_sales, .styles::before, .styles_photo_block1, .styles_photo_block2, .styles_text_list, .clients, footer {
+    nav, .nav-button, .projects_names, .projects_details_switch, .projects_details_photo, .types_steps-request, 
+    .types_form, .types_sales, .styles::before, .styles_photo_block1, .styles_photo_block2, .styles_text_list,
+     .clients, footer {
         display: none;
     }
 
